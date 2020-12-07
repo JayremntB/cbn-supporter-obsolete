@@ -1,0 +1,372 @@
+{
+  "rejoinChatroom": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "button",
+        "text": "",
+        "buttons": [
+          {
+            "type": "postback",
+            "title": "Vào lại phòng",
+            "payload": "joinPreRoom"
+          },
+          {
+            "type": "postback",
+            "title": "Menu",
+            "payload": "menu"
+          }
+        ]
+      }
+    }
+  },
+  "exitTemplate": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "button",
+        "text": "",
+        "buttons": [
+          {
+            "type": "postback",
+            "title": "Exit",
+            "payload": "leaveRoom"
+          }
+        ]
+      }
+    }
+  },
+  "userChatRoomInfo": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "button",
+        "text": "",
+        "buttons": [
+          {
+            "type": "web_url",
+            "url": "",
+            "title": "Xem/tải ảnh hiển thị"
+          },
+          {
+            "type": "postback",
+            "title": "Thay đổi",
+            "payload": "settingProfile"
+          }
+        ]
+      }
+    }
+  },
+  "chatbotInformationResponse": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "button",
+        "text": "CBN Supporter - Chatbot for supporting CBNers\nDeveloped in 2020, by JayremntB",
+        "buttons": [
+          {
+            "type": "web_url",
+            "url": "https://www.facebook.com/jayremnt13/",
+            "title": "Find me on Facebook"
+          }
+        ]
+      }
+    }
+  },
+  "menu": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "generic",
+        "elements": [
+          {
+            "title": "Bạn cần gì nào :3",
+            "buttons": [
+              {
+                "type": "postback",
+                "title": "Chat ẩn danh",
+                "payload": "chatRoom"
+              },
+              {
+                "type": "postback",
+                "title": "Tra thời khoá biểu",
+                "payload": "searchSchedule"
+              },
+              {
+                "type": "postback",
+                "title": "Tìm giáo viên",
+                "payload": "searchClasses"
+              }
+            ]
+          },
+          {
+            "title": "Bạn cần gì nào :3",
+            "buttons": [
+              {
+                "type": "postback",
+                "title": "Tra lịch dạy một môn",
+                "payload": "searchGroupsTaught"
+              },
+              {
+                "type": "postback",
+                "title": "Tìm lớp 4, 5 tiết",
+                "payload": "findGroupsWithClassesCondition"
+              },
+              {
+                "type": "postback",
+                "title": "Khác",
+                "payload": "otherFeatures"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "otherFeatures": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "generic",
+        "elements": [
+          {
+            "title": "Bạn cần gì nào :3",
+            "buttons": [
+              {
+                "type": "postback",
+                "title": "Cài đặt SimSimi",
+                "payload": "SimSimiSetting"
+              },
+              {
+                "type": "postback",
+                "title": "Tính giờ ngủ, dậy",
+                "payload": "countSleepTime"
+              },
+              {
+                "type": "postback",
+                "title": "Tình hình Covid",
+                "payload": "checkCovid"
+              }
+            ]
+          },
+          {
+            "title": "Khác",
+            "buttons": [
+              {
+                "type": "postback",
+                "title": "Tìm ảnh",
+                "payload": "findImages"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "roomChattingMenu": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "button",
+        "text": "Bạn cần gì nào :3",
+        "buttons": [
+          {
+            "type": "postback",
+            "title": "Rời phòng",
+            "payload": "leaveRoom"
+          },
+          {
+            "type": "postback",
+            "title": "Thông tin phòng",
+            "payload": "roomInfo"
+          },
+          {
+            "type": "postback",
+            "title": "Xem tên, ảnh hiện tại",
+            "payload": "userInfo"
+          }
+        ]
+      }
+    }
+  },
+  "chatRoom": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "generic",
+        "elements": [
+          {
+            "title": "Chọn phòng đi...",
+            "buttons": [
+              {
+                "type": "postback",
+                "title": "Ghép ngẫu nhiên",
+                "payload": "randomSubRoom"
+              },
+              {
+                "type": "postback",
+                "title": "Vào phòng tổng",
+                "payload": "generalRoom"
+              },
+              {
+                "type": "postback",
+                "title": "Tìm phòng",
+                "payload": "subRoom"
+              }
+            ]
+          },
+          {
+            "title": "Lựa chọn khác",
+            "buttons": [
+              {
+                "type": "postback",
+                "title": "Khác",
+                "payload": "chatRoomOtherOptions"
+              },
+              {
+                "type": "postback",
+                "title": "Thiết lập",
+                "payload": "chatRoomSetting"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "chatRoomSetting": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "generic",
+        "elements": [
+          {
+            "title": "Thiết lập thông tin cá nhân",
+            "buttons": [
+              {
+                "type": "postback",
+                "title": "Đổi tên hiển thị",
+                "payload": "settingName"
+              },
+              {
+                "type": "postback",
+                "title": "Đổi ảnh hiển thị",
+                "payload": "settingAvatar"
+              },
+              {
+                "type": "postback",
+                "title": "Dùng tên, ảnh thật",
+                "payload": "ChatRoomChangeToRealInfor"
+              }
+            ]
+          },
+          {
+            "title": "Thiết lập thông tin cá nhân",
+            "buttons": [
+              {
+                "type": "postback",
+                "title": "Đổi thành người lạ",
+                "payload": "ChatRoomChangeInforToDefault"
+              },
+              {
+                "type": "postback",
+                "title": "Xem tên, ảnh hiện tại",
+                "payload": "userInfo"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "chatRoomOtherOptions": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "button",
+        "text": "Các mục khác",
+        "buttons": [
+          {
+            "type": "postback",
+            "title": "Tạo phòng",
+            "payload": "createSubRoom"
+          },
+          {
+            "type": "postback",
+            "title": "Tìm phòng bằng ID",
+            "payload": "selectRoom"
+          },
+          {
+            "type": "postback",
+            "title": "Vào phòng vừa thoát",
+            "payload": "joinPreRoom"
+          }
+        ]
+      }
+    }
+  },
+  "sendAttachment": {
+    "attachment": {
+      "type": "",
+      "payload": {
+        "url": "",
+        "is_reusable": false
+      }
+    }
+  },
+  "findImagesSendAttachment": {
+    "attachment": {
+      "type": "",
+      "payload": {
+        "url": "",
+        "is_reusable": false
+      }
+    },
+    "quick_replies": [
+      {
+        "content_type": "text",
+        "title": "Ảnh khác",
+        "payload": "anotherImg",
+        "image_url": ""
+      },
+      {
+        "content_type": "text",
+        "title": "Đặt làm ảnh chat",
+        "payload": "settingAvatar",
+        "image_url": ""
+      }
+    ]
+  },
+  "personaSendLocation": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "button",
+        "text": "",
+        "buttons": [
+          {
+            "type": "web_url",
+            "url": "",
+            "title": "Xem"
+          }
+        ]
+      }
+    }
+  },
+  "chatRoomFindImages": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "button",
+        "text": "Gửi hoặc nhập link ảnh của bạn...",
+        "buttons": [
+          {
+            "type": "postback",
+            "title": "Tìm ảnh trên Pixabay",
+            "payload": "findImages"
+          }
+        ]
+      }
+    }
+  }
+}
