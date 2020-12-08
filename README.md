@@ -9,6 +9,7 @@
 * Tìm lớp học
 * Tìm lớp 4 tiết
 * Tìm lớp 5 tiết
+* Chat with Simsimi
 * Tìm ảnh (nguồn Pixabay)
 * Tính giờ ngủ
 * Tính giờ dậy
